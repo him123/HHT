@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    >
+
+
+    <include
+        layout="@layout/common_header"
+        android:id="@id/inc_common_header"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="@dimen/h2"
+        android:paddingLeft="@dimen/h2"
+        android:paddingBottom="@dimen/h1"
+        android:background="@drawable/back_radient"
+        android:orientation="vertical"
+        android:id="@+id/ll_common"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_customer_id"
+            android:text="@string/tv_cust_detail"
+            android:textSize="@dimen/label_big"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/size_five"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_customer_address"
+            android:text="@string/tv_cust_detail1"
+            android:textSize="@dimen/label_medium"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/size_five"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_customer_pobox"
+            android:text="@string/tv_cust_detail2"
+            android:textSize="@dimen/label_small"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/size_five"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_customer_contact"
+            android:text="@string/tv_cust_detail4"
+            android:textSize="@dimen/label_min"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/size_five"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="-20dp"
+
+        >
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_refresh"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/h3"
+            />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="@dimen/h2"
+        android:layout_marginTop="@dimen/h3"
+        >
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <ListView
+            android:id="@+id/lv_messages"
+
+            android:scrollbars="none"
+            android:divider="@color/grey"
+            android:dividerHeight="@dimen/size_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

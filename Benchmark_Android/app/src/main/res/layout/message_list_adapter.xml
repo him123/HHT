@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/h4"
+    android:background="@color/white"
+    >
+
+
+
+    <com.ae.benchmark.utils.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/message_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/roundedImageView"
+
+        />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_toRightOf="@+id/roundedImageView"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <!-- <TextView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:text="sales meeting"
+            android:textSize="@dimen/label_small"
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_message_title"
+            />-->
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="sales meeting"
+            android:textSize="@dimen/label_small"
+            android:id="@+id/tv_message"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

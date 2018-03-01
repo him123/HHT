@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_promotion"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="10"
+				>
+
+				<View
+								android:id="@+id/view"
+								android:layout_width="@dimen/size_four"
+								android:layout_height="match_parent"
+								android:background="@color/red"
+								/>
+
+				<TextView
+								android:id="@+id/tv_product"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_weight="9"
+								android:padding="@dimen/h3"
+								android:text="@string/frahn"
+								android:textColor="@color/black"
+								android:textSize="@dimen/label_big"
+								/>
+
+				<CheckBox
+								android:id="@+id/chk_product"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="1"
+								android:focusable="false"
+								android:focusableInTouchMode="false"
+								/>
+</LinearLayout>

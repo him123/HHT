@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="80dp"
+            android:paddingLeft="@dimen/h"
+            android:paddingRight="@dimen/h">
+
+            <ImageView android:background="@drawable/logo_fresh"
+                android:visibility="visible"
+                android:layout_width="210dp"
+                android:layout_height="157dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center_horizontal" />
+
+            <com.ae.benchmark.views.TextViewBold
+                android:id="@+id/welcome"
+                android:text="WELCOME"
+                android:gravity="center|bottom"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/colorPrimaryRED"
+                android:textSize="21sp"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--<ProgressBar
+                android:layout_width="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_height="50dp" />-->
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit_login"
+                style="@style/SpinKitView.Large"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="50dp"
+                app:SpinKit_Color="@color/textColorPrimaryRED"
+                android:layout_gravity="center_horizontal"
+                android:fitsSystemWindows="true"
+                android:indeterminate="true" />
+        </LinearLayout>
+
+<ImageView
+    android:id="@+id/redfooter"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:visibility="invisible"
+    android:background="@drawable/ic_redfooter"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>

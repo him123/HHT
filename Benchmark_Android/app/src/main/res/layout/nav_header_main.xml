@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/textColorPrimaryRED"
+                android:orientation="vertical"
+                android:padding="@dimen/h2"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/tv_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/route_code_101"
+        android:layout_marginTop="@dimen/h2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/tv_driver_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_five"
+        android:text="@string/welcome_john_doe_1000002445"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/tv_trip_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_five"
+        android:text="@string/welcome_john_doe_1000002445"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/h3"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_messages"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_msg"
+            android:text="@string/messages"
+
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/h3"
+            android:textColor="@color/white"
+            />
+
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_setting"
+            android:text="@string/settings"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/size_five"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_logout"
+            android:text="@string/log_out"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

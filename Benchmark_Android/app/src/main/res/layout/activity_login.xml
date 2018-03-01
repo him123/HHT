@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/redfooter"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingLeft="@dimen/h"
+            android:paddingRight="@dimen/h">
+
+            <ImageView android:background="@drawable/logo_fresh"
+                android:visibility="visible"
+                android:layout_width="210dp"
+                android:layout_height="157dp"
+                android:layout_marginBottom="@dimen/h"
+                android:layout_gravity="center_horizontal" />
+
+            <com.ae.benchmark.views.TextViewRegular
+                android:text="LOGIN TO YOUR ACCOUNT"
+                android:gravity="center|bottom"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="35dp"
+                android:textColor="@color/colorPrimaryRED"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--  Email Label -->
+                <com.ae.benchmark.views.EditTextRegular
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="ID"
+                    android:textSize="14sp"
+                    android:background="@drawable/edittext_bg"
+                    android:textColorHint="@color/textColorPrimaryRED"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/ic_circle"/>
+
+            <!--  Password Label -->
+
+                <com.ae.benchmark.views.EditTextRegular
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:hint="PASSWORD"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/textColorPrimaryRED"
+                    android:textColor="@color/black"
+                    android:password="true"
+                    android:drawableLeft="@drawable/ic_circle"/>
+            <com.ae.benchmark.views.ButtonRegular
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="24sp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="16sp"
+                android:background="@color/colorPrimaryRED"
+                android:textColor="@color/white"
+                android:onClick="login"
+                android:text="@string/login"/>
+            <com.ae.benchmark.views.TextViewRegular
+                android:id="@+id/tv_forgotPass"
+                android:text="Forgot Password?"
+                android:gravity="center|bottom"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/textColorPrimaryRED"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.ae.benchmark.views.TextViewRegular
+                android:id="@+id/tv_appinfo"
+                android:text="Test"
+                android:gravity="center|bottom"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/textColorPrimaryRED"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+<ImageView
+    android:id="@+id/redfooter"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:visibility="invisible"
+    android:background="@drawable/ic_redfooter"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>

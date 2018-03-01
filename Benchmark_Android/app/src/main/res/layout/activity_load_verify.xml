@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="4">
+
+				<android.support.design.widget.AppBarLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:theme="@style/AppTheme.AppBarOverlay">
+
+								<android.support.v7.widget.Toolbar
+												android:id="@+id/toolbar"
+												android:layout_width="match_parent"
+												android:layout_height="?attr/actionBarSize"
+												android:background="?attr/colorPrimary"
+												app:popupTheme="@style/AppTheme.PopupOverlay">
+
+									<EditText android:id="@+id/et_search_customer"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:layout_marginRight="40dp"
+										android:layout_marginLeft="10dp"
+										android:visibility="gone"
+										android:layout_marginTop="@dimen/space"
+										android:drawableRight="@android:drawable/ic_menu_search"
+										android:hint="Search Product.."
+										android:textColorHint="@color/white"
+										android:textStyle="italic"
+										android:textSize="@dimen/label_min"
+										android:gravity="center"
+										android:textColor="@color/white"
+										android:inputType="text"/>
+									<ImageView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_alignParentEnd="true"
+										android:layout_alignParentRight="true"
+										android:layout_centerInParent="true"
+										android:layout_marginLeft="10dp"
+										android:layout_marginRight="@dimen/size_five"
+										android:src="@drawable/ic_youtube_searched_for_black_24dp"
+										android:visibility="visible"
+										android:id="@+id/iv_search"
+										/>
+								</android.support.v7.widget.Toolbar>
+				</android.support.design.widget.AppBarLayout>
+
+				<LinearLayout
+								android:orientation="vertical"
+								android:weightSum="3"
+								android:layout_weight="3.5"
+								android:layout_width="wrap_content"
+								android:layout_height="0dp">
+								<ListView
+												android:id="@+id/loadSummaryList"
+												android:layout_width="match_parent"
+												android:layout_height="0dp"
+												android:layout_weight="2.5"/>
+								<View
+												android:layout_marginTop="@dimen/space"
+												android:layout_width="match_parent"
+												android:layout_height="1dp"
+												android:background="@color/colorPrimary"/>
+								<LinearLayout
+												android:paddingTop="@dimen/h3"
+												android:paddingBottom="@dimen/h3"
+												android:layout_width="match_parent"
+												android:layout_height="0dp"
+												android:background="@drawable/custom_border"
+												android:layout_weight="0.5"
+												android:orientation="vertical">
+
+												<TextView
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content"
+																android:layout_centerHorizontal="true"
+																android:layout_gravity="center_horizontal"
+																android:gravity="center_horizontal"
+																android:text="@string/total_amount"
+																android:layout_marginBottom="@dimen/size_five"
+																android:textColor="@color/colorPrimary"
+																android:textSize="@dimen/label_small"
+																android:id="@+id/tv_label"/>
+												<TextView
+																android:id="@+id/tv_amt"
+																android:layout_width="wrap_content"
+																android:layout_height="wrap_content"
+																android:layout_centerHorizontal="true"
+																android:layout_gravity="center_horizontal"
+																android:gravity="center_horizontal"
+																android:text="@string/_0_00"
+																android:textSize="@dimen/label_big"
+																android:textColor="@color/black"/>
+								</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+								android:layout_weight="0.5"
+								android:orientation="vertical"
+								android:weightSum="1"
+								android:layout_width="match_parent"
+								android:layout_height="0dp">
+
+								<LinearLayout
+												android:layout_width="match_parent"
+												android:layout_height="0dp"
+												android:layout_marginBottom="@dimen/activity_horizontal_margin"
+												android:layout_marginLeft="@dimen/margin_top"
+												android:layout_marginRight="@dimen/margin_top"
+												android:layout_weight="1"
+												android:orientation="horizontal"
+												android:weightSum="2">
+
+												<Button
+																android:id="@+id/btn_print_load"
+																android:layout_width="0dp"
+																android:layout_height="match_parent"
+																android:layout_marginLeft="@dimen/h3"
+																android:layout_weight="1"
+																android:background="@color/buttoncolor"
+																android:onClick="confirmLoad"
+																android:text="@string/confirmload"
+																android:textColor="@color/white"
+																/>
+
+												<Button
+																android:id="@+id/btn_cancel_load"
+																android:layout_width="0dp"
+																android:layout_height="match_parent"
+																android:layout_marginLeft="@dimen/h3"
+																android:layout_weight="1"
+																android:background="@color/cancelcolor"
+																android:onClick="cancel"
+																android:text="@string/cancel"
+																android:textColor="@color/white"
+																/>
+								</LinearLayout>
+
+				</LinearLayout>
+</LinearLayout>

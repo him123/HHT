@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.ae.benchmark.activities.CollectionsActivity">
+
+    <include
+        android:id="@+id/inc_common_header_colletion"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_collation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inc_common_header_colletion"
+        android:background="@drawable/back_radient"
+        android:orientation="vertical"
+        android:padding="@dimen/h3"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/elevation_size"
+            android:id="@+id/tv_customer_id"
+            android:text="@string/tv_cust_detail"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_marginTop="@dimen/size_four"
+            android:layout_marginBottom="@dimen/size_four"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/elevation_size"
+            android:id="@+id/tv_method_of_payment"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_cust_detail1"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_colletions_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/grey"
+        android:dividerHeight="@dimen/h3"
+        android:scrollbars="none"
+        android:paddingLeft="@dimen/all_padding"
+        android:paddingRight="@dimen/all_padding"
+        android:layout_marginTop="@dimen/all_padding"
+        android:layout_above="@+id/ll_bottom_colletion"
+        android:layout_below="@+id/ll_collation_title" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_colletion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_five"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h3"
+            android:textColor="@color/buttoncolor"
+            android:text="@string/amt_paid" />
+
+        <TextView
+            android:id="@+id/tv_amt_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/_0_00"
+            android:textSize="@dimen/label_big"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_cash_in_hand"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

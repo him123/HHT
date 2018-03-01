@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:weightSum="5"
+              android:layout_width="300dp"
+              android:layout_height="300dp">
+
+    <RelativeLayout
+        android:background="@color/buttoncolor"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_marginLeft="@dimen/h1"
+        android:layout_marginRight="@dimen/h1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:text="@string/variance_load"
+            android:layout_marginLeft="@dimen/h3"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.7"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/h3"
+            android:layout_marginTop="@dimen/size_five"
+            android:text="Item Code : "
+            android:gravity="center|left"
+            android:layout_gravity="center|left"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            />
+
+        <TextView
+            android:id="@+id/lbl_item_code_alert_variance"
+            android:layout_marginTop="@dimen/size_five"
+            android:layout_marginLeft="@dimen/h3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center|left"
+            android:layout_gravity="center|left"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.7"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/size_five"
+            android:layout_weight="0.6"
+            android:layout_marginLeft="10dp"
+            android:text= "Description : "
+            android:gravity="center|left"
+            android:layout_gravity="center|left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/lbl_item_description_alert_variance"
+            android:layout_marginTop="@dimen/size_five"
+            android:layout_weight="1.4"
+            android:layout_marginLeft="0dp"
+            android:gravity="center|left"
+            android:layout_gravity="center|left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1.6"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/size_five"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/size_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Cases : "
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_marginLeft="@dimen/h3"
+                android:gravity="center|left"
+                android:layout_gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+
+            <EditText
+                android:id="@+id/et_quantitycs_alert_variance"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_marginLeft="@dimen/h3"
+                android:inputType="number"
+                android:gravity="center|left"
+                android:layout_gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/size_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Units : "
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:gravity="center|left"
+                android:layout_gravity="center|left"
+                android:layout_height="0dp"/>
+
+            <EditText
+                android:id="@+id/et_quantitybt_alert_variance"
+                android:gravity="center|left"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/size_five"
+                android:layout_gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h3"
+        >
+
+        <Button
+            android:id="@+id/btn_update_alert"
+            android:textColor="@color/white"
+            android:background="@color/buttoncolor"
+            android:text="@string/update"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/btn_cancel_alert"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/cancelcolor"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/h3"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+</LinearLayout>

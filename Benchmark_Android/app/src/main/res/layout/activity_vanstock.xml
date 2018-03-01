@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include
+        android:id="@+id/inc_common_header_invoice"
+        layout="@layout/common_header"/>
+
+    <ListView
+        android:layout_below="@+id/inc_common_header_invoice"
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="0px"
+        android:dividerHeight="0.3dp"
+        android:layout_above="@+id/btnPrint"
+        android:divider="@color/textColorPrimaryRED"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/space"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginBottom="@dimen/space"
+        android:background="@color/buttoncolor"
+        android:paddingLeft="@dimen/space"
+        android:visibility="gone"
+        android:paddingRight="@dimen/space"
+        android:textAllCaps="true"
+        android:text="@string/printload"
+        android:textColor="@color/white"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabVanStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:src="@drawable/ic_printer"
+        />
+
+
+</RelativeLayout>
+
+

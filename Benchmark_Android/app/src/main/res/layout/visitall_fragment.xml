@@ -1,0 +1,57 @@
+<FrameLayout android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/h3"
+    android:background="@color/grey">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="wrap_content">-->
+        <ExpandableListView
+            android:id="@+id/journeyPlanList"
+            android:background="@color/grey"
+            android:scrollbars="none"
+            android:divider="@color/grey"
+            android:dividerHeight="@dimen/h3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:longClickable="true"
+
+            />
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+</LinearLayout>
+
+<android.support.design.widget.CoordinatorLayout
+android:id="@+id/rootLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/map"
+    android:layout_margin="@dimen/h1"
+    android:layout_gravity="bottom|start"
+    app:backgroundTint="@color/colorPrimary"
+    android:visibility="invisible"
+
+    />
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+</FrameLayout>

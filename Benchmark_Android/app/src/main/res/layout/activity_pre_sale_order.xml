@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pre_sale_order_proceed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ae.benchmark.activities.PreSaleOrderProceedActivity">
+
+    <include
+        android:id="@+id/inc_common_header"
+        layout="@layout/common_header" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inc_common_header"
+        android:paddingTop="@dimen/h2"
+        android:paddingLeft="@dimen/h2"
+        android:paddingBottom="@dimen/h1"
+        android:background="@drawable/back_radient"
+        android:orientation="vertical"
+        android:id="@+id/ll_common"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_cust_detail"
+            android:textSize="@dimen/h1"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/size_five"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_cust_detail1"
+            android:textSize="@dimen/label_medium"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_cust_detail2"
+            android:textSize="@dimen/label_small"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/size_five"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_cust_detail4"
+            android:textSize="@dimen/label_min"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/size_five"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/float_presale_proceed"
+        android:layout_below="@+id/ll_common"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/h3"
+        android:visibility="gone"
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h3"
+            android:layout_marginLeft="@dimen/h2"
+            android:layout_marginRight="@dimen/h2"
+
+            card_view:cardCornerRadius="@dimen/list_space"
+            card_view:cardElevation="@dimen/size_two"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/h3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/delivery_date"
+                    android:textSize="@dimen/label_big"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_calander_presale_proced"
+                    android:text="@string/date"
+                    android:textSize="@dimen/label_big" />
+
+                <ImageView
+                    android:id="@+id/iv_calander_presale_proced"
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="@dimen/image_width"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/label_big"
+                    android:src="@drawable/ic_calendar" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h"
+            android:layout_marginRight="@dimen/h"
+            android:background="@color/white"
+            android:paddingTop="@dimen/h3"
+            android:paddingBottom="@dimen/h3"
+
+            >
+
+            <com.ae.benchmark.utils.AnimatedExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exp_presale"
+                android:groupIndicator="@null"
+                android:divider="@color/white"
+                android:dividerHeight="@dimen/size_five"
+                android:paddingBottom="@dimen/size_five"
+                android:layout_marginLeft="@dimen/h1"
+                android:layout_marginRight="@dimen/h1"
+
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_presale_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_confirm_delivery_presale_proceed"
+        android:layout_marginTop="@dimen/h3"
+        android:layout_marginRight="@dimen/h2"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        android:visibility="gone"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_confirm_delivery_presale_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/proceed"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/h3"
+        />
+</RelativeLayout>

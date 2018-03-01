@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBack"
+        android:layout_alignParentTop="true">
+
+     <LinearLayout
+         android:weightSum="2"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:paddingLeft="10dp">
+
+         <LinearLayout
+             android:id="@+id/layout_labels"
+             android:orientation="vertical"
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:weightSum="7"
+             android:layout_height="match_parent">
+
+             <TextView
+                 android:id="@+id/tvroute"
+                 android:layout_weight="1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h3"
+                 android:text="@string/beginday_route"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/tvSalesManNo"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/sales_man_no"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:textSize="@dimen/label_big"
+                 android:id="@+id/tvSalesManName"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/sales_man_name"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:textSize="@dimen/label_big"
+                 android:id="@+id/tvsalesDate"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/sales_date"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/tvtime"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/time"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <!--<TextView
+                 android:id="@+id/tvdelieveryDate"
+                 android:layout_width="wrap_content"
+                 android:textSize="@dimen/label_big"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/delivery_date"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/tvdelieveryRoute"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/delivery_route"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>-->
+
+             <TextView
+                 android:id="@+id/tvvehicleNo"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/vehicle_no"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/tvDay"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/h2"
+                 android:text="@string/day"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+         </LinearLayout>
+         <View
+             android:layout_marginTop="@dimen/h3"
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:layout_marginBottom="22dp"
+             android:background="@color/textColorPrimaryRED"/>
+         <LinearLayout
+             android:id="@+id/layout_labels_values"
+             android:orientation="vertical"
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:weightSum="7"
+             android:layout_height="match_parent">
+
+             <TextView
+                 android:id="@+id/route"
+                 android:layout_weight="1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="0dp"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_marginTop="@dimen/h3"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/salesManNo"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:textSize="@dimen/label_big"
+                 android:id="@+id/salesManName"
+                 android:layout_width="wrap_content"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:textSize="@dimen/label_big"
+                 android:id="@+id/salesDate"
+                 android:layout_width="wrap_content"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/time"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_height="0dp"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <!--<TextView
+                 android:id="@+id/delieveryDate"
+                 android:layout_width="wrap_content"
+                 android:textSize="@dimen/label_big"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/delieveryRoute"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>-->
+
+             <TextView
+                 android:id="@+id/vehicleNo"
+                 android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_height="0dp"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+             <TextView
+                 android:id="@+id/day"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/h5"
+                 android:layout_marginTop="@dimen/h2"
+                 android:textSize="@dimen/label_big"
+                 android:textColor="@color/textColorPrimaryRED"
+                 />
+
+             <View
+                 android:layout_marginTop="@dimen/h3"
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="@color/textColorPrimaryRED"/>
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+   <!-- <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/all_padding"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvroute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h3"
+                    android:text="@string/beginday_route"
+                    android:textSize="@dimen/label_big"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <EditText android:id="@+id/route"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h3"
+                    android:singleLine="true"
+                    android:textSize="@dimen/label_big"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/tvroute"
+                    />
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvroute"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvSalesManNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:text="@string/sales_man_no"
+                    android:textSize="@dimen/label_big"
+                    android:layout_below="@id/tvroute"
+
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <EditText android:id="@+id/salesManNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:layout_below="@id/tvroute"
+                    android:textSize="@dimen/label_big"
+                    android:layout_toRightOf="@+id/tvSalesManNo"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvSalesManNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+                <TextView
+                    android:textSize="@dimen/label_big"
+                    android:id="@+id/tvSalesManName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:text="@string/sales_man_name"
+                    android:layout_below="@+id/tvSalesManNo"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <EditText android:id="@+id/salesManName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/label_big"
+                    android:layout_marginTop="@dimen/h1"
+                    android:singleLine="true"
+                    android:layout_below="@id/tvSalesManNo"
+                    android:layout_toRightOf="@+id/tvSalesManName"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvSalesManName"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+                <TextView
+                    android:textSize="@dimen/label_big"
+                    android:id="@+id/tvsalesDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:text="@string/sales_date"
+                    android:layout_below="@+id/tvSalesManName"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+
+                <EditText android:id="@+id/salesDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/h1"
+                    android:layout_below="@id/tvSalesManName"
+                    android:textSize="@dimen/label_big"
+                    android:layout_toRightOf="@+id/tvsalesDate"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvsalesDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+                <TextView
+                    android:id="@+id/tvtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:layout_below="@+id/tvsalesDate"
+                    android:text="@string/time"
+                    android:textSize="@dimen/label_big"
+
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <EditText android:id="@+id/time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="@dimen/label_big"
+                    android:layout_below="@id/tvsalesDate"
+                    android:layout_toRightOf="@+id/tvtime"
+                    android:textColor="@color/textColorPrimaryRED"
+                    android:layout_marginTop="@dimen/h3"/>
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+                <TextView
+                    android:id="@+id/tvdelieveryDate"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/label_big"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:layout_below="@+id/tvtime"
+                    android:text="@string/delivery_date"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+
+                <EditText android:id="@+id/delieveryDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/label_big"
+                    android:layout_toRightOf="@+id/tvdelieveryDate"
+                    android:singleLine="true"
+                    android:layout_below="@id/tvtime"
+                    android:textColor="@color/textColorPrimaryRED"
+                    android:layout_marginTop="@dimen/h3"/>
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvdelieveryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+                <TextView
+                    android:id="@+id/tvdelieveryRoute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:text="@string/delivery_route"
+                    android:textSize="@dimen/label_big"
+
+                    android:layout_below="@id/tvdelieveryDate"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <EditText android:id="@+id/delieveryRoute"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorPrimaryRED"
+                    android:layout_below="@id/tvdelieveryDate"
+                    android:textSize="@dimen/label_big"
+                    android:layout_toRightOf="@+id/tvdelieveryRoute"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/h3"/>
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvdelieveryRoute"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+                <TextView
+                    android:id="@+id/tvvehicleNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:layout_below="@id/tvdelieveryRoute"
+                    android:text="@string/vehicle_no"
+                    android:textSize="@dimen/label_big"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <EditText android:id="@+id/vehicleNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_below="@id/tvdelieveryRoute"
+                    android:textSize="@dimen/label_big"
+                    android:layout_toRightOf="@+id/tvvehicleNo"
+                    android:textColor="@color/textColorPrimaryRED"
+                    android:layout_marginTop="@dimen/h3"/>
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvvehicleNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h1"
+                    android:layout_below="@+id/tvvehicleNo"
+                    android:text="@string/day"
+                    android:textSize="@dimen/label_big"
+                    android:textColor="@color/textColorPrimaryRED"
+                    />
+
+                <EditText android:id="@+id/day"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/textColorPrimaryRED"
+                    android:layout_below="@id/tvvehicleNo"
+                    android:textSize="@dimen/label_big"
+                    android:layout_toRightOf="@+id/tvDay"
+                    android:layout_marginTop="@dimen/h3"/>
+
+                <View
+                    android:layout_marginTop="@dimen/h3"
+                    android:layout_below="@id/tvDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textColorPrimaryRED"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+-->
+    </ScrollView>
+
+    <Button android:id="@+id/btnBack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:background="@color/buttoncolor"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

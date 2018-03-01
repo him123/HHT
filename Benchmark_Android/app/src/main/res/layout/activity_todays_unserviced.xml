@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_todays_unserviced"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                tools:context="com.ae.benchmark.activities.TodaysUnservicedActivity">
+				<include
+								android:id="@+id/ll_header"
+								layout="@layout/common_header"/>
+				<LinearLayout
+								android:layout_below="@+id/ll_header"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:background="@color/grey"
+								android:padding="@dimen/h3"
+								android:orientation="vertical">
+								<ListView
+												android:id="@+id/listView"
+												android:layout_width="match_parent"
+												android:layout_height="wrap_content"
+												android:background="@color/white"
+												android:divider="@color/grey"
+												android:dividerHeight="@dimen/h3"
+												android:scrollbars="none"
+												/>
+				</LinearLayout>
+</RelativeLayout>

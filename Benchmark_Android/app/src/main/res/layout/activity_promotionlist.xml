@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    >
+
+    <include
+         layout="@layout/common_header"
+        android:id="@id/inc_common_header"
+        />
+    <ListView
+
+       android:padding="@dimen/h3"
+        android:id="@+id/list_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/grey"
+        android:dividerHeight="@dimen/size_five"
+        android:layout_below="@id/inc_common_header"
+        android:layout_above="@+id/btn_apply"
+        android:drawSelectorOnTop="true"
+
+       />
+
+    <Button
+        android:layout_marginTop="@dimen/h3"
+        android:id="@+id/btn_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/apply"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@color/buttoncolor"
+
+
+        />
+
+</RelativeLayout>

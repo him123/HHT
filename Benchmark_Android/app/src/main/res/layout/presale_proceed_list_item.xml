@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/tv_sku_pre_proceed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/light_border"
+        android:padding="@dimen/size_five"
+        android:inputType="text"
+        android:text="product"
+        android:textColor="@drawable/edit_text_color"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:enabled="false"
+        />
+
+    <EditText
+        android:id="@+id/tv_ctn_pre_proceed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:background="@drawable/light_border"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/tv_btl_pre_proceed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/light_border"
+        android:padding="@dimen/size_five"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/price"
+        android:visibility="gone"
+        android:background="@drawable/light_border"
+        android:padding="@dimen/size_five"
+        />
+</LinearLayout>
